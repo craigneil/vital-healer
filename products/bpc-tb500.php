@@ -1,6 +1,9 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
 // Load configuration
-require_once 'config.php';
+require_once(__DIR__ . '/../config.php');
 
 // Product-specific data
 $product = [
@@ -55,7 +58,8 @@ $structured_data = [
 ];
 
 // Include header
-include 'includes/header.php';
+
+include(__DIR__ . '/../includes/header.php');
 ?>
 
 <!-- Breadcrumbs for SEO -->

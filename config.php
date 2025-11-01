@@ -31,7 +31,7 @@ $featured_compounds = [
 
 // Educational Guides
 $educational_guides = [
-    ['title' => 'What Are Peptides?', 'subtitle' => 'A Beginner's Guide'],
+    ['title' => 'What Are Peptides?', 'subtitle' => 'A Beginners Guide'],
     ['title' => 'Peptide Storage & Stability', 'subtitle' => 'Best Practices'],
     ['title' => 'BPC-157 vs TB-500:', 'subtitle' => 'Key Differences']
 ];
