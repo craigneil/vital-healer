@@ -1,0 +1,32 @@
+# robots.txt for vitalhealer.com
+
+User-agent: *
+Allow: /
+
+# Disallow admin areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/
+
+# Disallow search and cart pages (if added)
+Disallow: /search?
+Disallow: /cart?
+Disallow: /checkout/
+
+# Allow important directories
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Crawl delay (optional - adjust based on server capacity)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://vitalhealer.com/sitemap.xml
+
+# Block bad bots (optional)
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
