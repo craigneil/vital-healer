@@ -279,7 +279,7 @@ include(__DIR__ . '/../includes/header.php');
                             <div class="card-body">
                                 <h3 class="h5 text-primary mb-3">BPC-157 (Body Protection Compound)</h3>
                                 <div class="text-center mb-3">
-                                    <img src="/images/bpc-157-chem.svg"
+                                    <img src="/images/bpc-157-chem.jpg"
                                          alt="BPC-157 Chemical Structure - 15 Amino Acid Sequence"
                                          class="img-fluid"
                                          style="max-height: 200px; width: auto;">
@@ -299,7 +299,7 @@ include(__DIR__ . '/../includes/header.php');
                             <div class="card-body">
                                 <h3 class="h5 text-primary mb-3">TB-500 (Thymosin Beta-4)</h3>
                                 <div class="text-center mb-3">
-                                    <img src="/images/tb500-chem.svg"
+                                    <img src="/images/tb500-chem.jpg"
                                          alt="TB-500 Chemical Structure - 43 Amino Acid Thymosin Beta-4 Fragment"
                                          class="img-fluid"
                                          style="max-height: 200px; width: auto;">
@@ -377,7 +377,7 @@ include(__DIR__ . '/../includes/header.php');
                                 <strong>BPC-157 Structure</strong>
                             </div>
                             <div class="card-body text-center bg-light">
-                                <img src="/images/bpc-157-chem.svg"
+                                <img src="/images/bpc-157-chem.jpg"
                                      alt="Complete BPC-157 Chemical Structure - Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val"
                                      class="img-fluid"
                                      style="max-width: 100%; height: auto;">
@@ -394,7 +394,7 @@ include(__DIR__ . '/../includes/header.php');
                                 <strong>TB-500 Structure</strong>
                             </div>
                             <div class="card-body text-center bg-light">
-                                <img src="/images/tb500-chem.svg"
+                                <img src="/images/tb500-chem.jpg"
                                      alt="Complete TB-500 Chemical Structure - Thymosin Beta-4 Fragment (43 Amino Acids)"
                                      class="img-fluid"
                                      style="max-width: 100%; height: auto;">
