@@ -23,35 +23,175 @@
     
     <!-- Canonical URL -->
     <link rel="canonical" href="<?php echo SITE_URL . $_SERVER['REQUEST_URI']; ?>">
+
+    <!-- Resource Hints for Performance -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+    <!-- Bootstrap CSS - Load non-blocking with media trick -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" media="print" onload="this.media='all'; this.onload=null;">
+    <noscript>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </noscript>
+
+    <!-- Google Material Symbols - Optimized (single weight, font-display swap) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" media="print" onload="this.media='all'; this.onload=null;">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap">
+    </noscript>
     
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
-    <!-- Google Material Symbols for Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-    
-    <!-- Custom Styles for Brand Colors and Minor Adjustments -->
+    <!-- Critical CSS - Inlined for Above-the-Fold Performance -->
     <style>
+        /* CSS Variables */
         :root {
             --bs-primary: #2d65c7;
             --bs-primary-rgb: 45, 101, 199;
+            --bs-white: #ffffff;
+            --bs-gray-500: #6c757d;
         }
+
+        /* Critical Above-the-Fold Styles */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #212529;
+            background-color: #fff;
+        }
+
+        /* Brand Colors */
         .text-accent {
-            color: #b136c7;
+            color: #b136c7 !important;
         }
+
+        .text-primary {
+            color: var(--bs-primary) !important;
+        }
+
+        /* Header - Critical Styles */
+        header {
+            background-color: var(--bs-white) !important;
+            box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+        }
+
+        header.sticky-top {
+            position: sticky;
+            top: 0;
+            z-index: 1030;
+            background-color: var(--bs-white) !important;
+        }
+
+        header .navbar {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.5rem 1rem;
+            background-color: var(--bs-white) !important;
+        }
+
+        header .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding-top: 0.3125rem;
+            padding-bottom: 0.3125rem;
+            margin-right: 1rem;
+            font-size: 1.25rem;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        header .navbar-collapse {
+            background-color: var(--bs-white) !important;
+        }
+
+        .container-xl {
+            width: 100%;
+            padding-right: 0.75rem;
+            padding-left: 0.75rem;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        @media (min-width: 1200px) {
+            .container-xl {
+                max-width: 1140px;
+            }
+        }
+
+        @media (min-width: 1400px) {
+            .container-xl {
+                max-width: 1320px;
+            }
+        }
+
+        /* Typography - Above Fold */
+        .fs-4 {
+            font-size: calc(1.275rem + 0.3vw) !important;
+        }
+
+        .fw-bolder {
+            font-weight: 700 !important;
+        }
+
+        .lh-1 {
+            line-height: 1 !important;
+        }
+
+        /* Layout Utilities */
+        .d-flex {
+            display: flex !important;
+        }
+
+        .align-items-center {
+            align-items: center !important;
+        }
+
+        .gap-2 {
+            gap: 0.5rem !important;
+        }
+
+        /* Mobile Menu Styles */
+        @media (max-width: 991.98px) {
+            header.sticky-top .navbar-collapse {
+                padding: 1rem;
+                margin-top: 0.5rem;
+                border-radius: 0.375rem;
+            }
+        }
+
+        /* Performance - Non-Critical Styles */
         .card-hover:hover {
             transform: translateY(-5px);
-            box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
         }
+
         .btn:hover {
             transform: translateY(-2px);
         }
+
         .card, .btn {
             transition: all 0.2s ease-in-out;
         }
+
         .feature-icon {
             font-size: 2.5rem;
             color: var(--bs-primary);
+        }
+
+        /* Hide content until fonts load */
+        .navbar-brand {
+            font-display: swap;
         }
     </style>
     <?php if (isset($additional_css)) echo $additional_css; ?>
