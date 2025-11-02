@@ -1118,4 +1118,73 @@ include(__DIR__ . '/../includes/header.php');
                     <img src="/images/ghk-cu_thumb.jpg" class="card-img-top" alt="GHK-Cu">
                     <div class="card-body">
                         <h3 class="h6">GHK-Cu 50mg</h3>
-                        <p class="text-primary fw-bold">$55.00
+                        <p class="text-primary fw-bold">$55.00</p>
+                        <a href="/products/ghk-cu" class="btn btn-sm btn-outline-primary w-100">View Product</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <img src="/images/bpc-157-solo_thumb.jpg" class="card-img-top" alt="Sermorelin">
+                    <div class="card-body">
+                        <h3 class="h6">Sermorelin 5mg</h3>
+                        <p class="text-primary fw-bold">$65.00</p>
+                        <a href="/products/sermorelin" class="btn btn-sm btn-outline-primary w-100">View Product</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Structured Data for SEO -->
+<script type="application/ld+json">
+<?php echo json_encode($structured_data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES); ?>
+</script>
+
+<!-- Additional JavaScript for Product Interactions -->
+<script>
+// Quantity controls
+document.getElementById('qty-plus')?.addEventListener('click', function() {
+    const qtyInput = document.getElementById('quantity');
+    qtyInput.value = parseInt(qtyInput.value) + 1;
+    updatePrice();
+});
+
+document.getElementById('qty-minus')?.addEventListener('click', function() {
+    const qtyInput = document.getElementById('quantity');
+    if (parseInt(qtyInput.value) > 1) {
+        qtyInput.value = parseInt(qtyInput.value) - 1;
+        updatePrice();
+    }
+});
+
+// Update price calculation
+function updatePrice() {
+    const selectedVariant = document.querySelector('input[name="variant"]:checked');
+    const quantity = parseInt(document.getElementById('quantity').value);
+    const price = parseFloat(selectedVariant.dataset.price);
+    const total = price * quantity;
+    document.getElementById('total-price').textContent = total.toFixed(2);
+}
+
+// Update price when variant changes
+document.querySelectorAll('input[name="variant"]').forEach(radio => {
+    radio.addEventListener('change', updatePrice);
+});
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href !== '#' && document.querySelector(href)) {
+            e.preventDefault();
+            document.querySelector(href).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+</script>
+
+<?php include(__DIR__ . '/../includes/footer.php'); ?>
