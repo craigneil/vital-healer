@@ -26,7 +26,7 @@ $product = [
 
 // SEO Settings
 $page_title = 'Buy BPC-157 TB-500 Blend 10mg/20mg | 99% Purity | USA Made';
-$page_description = 'Premium BPC-157 and TB-500 peptide blend for research. Synergistic healing properties, third-party tested, 99% purity. Fast shipping, lab-tested COA included.';
+$page_description = 'Premium BPC-157 and TB-500 peptide blend for research. Synergistic healing properties, third-party tested, 99% purity. Fast shipping.';
 $page_keywords = 'BPC-157 TB-500 blend, buy BPC-157 TB-500, peptide blend, tissue repair peptides, recovery peptides, research peptides';
 
 // Structured Data for Rich Snippets
@@ -98,10 +98,6 @@ include(__DIR__ . '/../includes/header.php');
                         <div>
                             <div class="text-primary fw-bold fs-4">24h</div>
                             <small class="text-muted">Shipping</small>
-                        </div>
-                        <div>
-                            <div class="text-primary fw-bold fs-4">COA</div>
-                            <small class="text-muted">Included</small>
                         </div>
                     </div>
                 </div>
@@ -225,11 +221,6 @@ include(__DIR__ . '/../includes/header.php');
             <li class="nav-item" role="presentation">
                 <button class="nav-link fw-semibold" id="dosing-tab" data-bs-toggle="tab" data-bs-target="#dosing" type="button">
                     Dosing Information
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link fw-semibold" id="coa-tab" data-bs-toggle="tab" data-bs-target="#coa" type="button">
-                    COA / Testing
                 </button>
             </li>
         </ul>
@@ -488,72 +479,6 @@ include(__DIR__ . '/../includes/header.php');
                 </div>
             </div>
 
-            <!-- COA Tab -->
-            <div class="tab-pane fade" id="coa" role="tabpanel">
-                <h2 class="h3 mb-4">Certificate of Analysis & Third-Party Testing</h2>
-                
-                <p class="lead">Every batch of our BPC-157 & TB-500 blend undergoes rigorous third-party testing to ensure purity, identity, and quality.</p>
-
-                <div class="row g-4 mb-4">
-                    <div class="col-md-4">
-                        <div class="card text-center h-100">
-                            <div class="card-body">
-                                <div class="display-4 text-primary mb-2">99%+</div>
-                                <h3 class="h6">Purity</h3>
-                                <p class="small text-muted mb-0">Verified by HPLC</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card text-center h-100">
-                            <div class="card-body">
-                                <div class="display-4 text-primary mb-2">✓</div>
-                                <h3 class="h6">Identity Confirmed</h3>
-                                <p class="small text-muted mb-0">Mass Spectrometry</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card text-center h-100">
-                            <div class="card-body">
-                                <div class="display-4 text-primary mb-2">3rd</div>
-                                <h3 class="h6">Party Tested</h3>
-                                <p class="small text-muted mb-0">Independent Lab</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <h3 class="h5 mb-3">Our Testing Process</h3>
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <ol>
-                            <li><strong>HPLC (High-Performance Liquid Chromatography):</strong> Verifies purity and determines the exact concentration of the peptide</li>
-                            <li><strong>Mass Spectrometry:</strong> Confirms molecular weight and identity of the peptide sequence</li>
-                            <li><strong>Amino Acid Analysis:</strong> Validates the complete amino acid sequence</li>
-                            <li><strong>Sterility Testing:</strong> Ensures product is free from bacterial contamination</li>
-                            <li><strong>Endotoxin Testing:</strong> Verifies endotoxin levels are within acceptable limits</li>
-                        </ol>
-                    </div>
-                </div>
-
-                <div class="text-center">
-                    <button class="btn btn-primary btn-lg mb-3">
-                        Download Current Batch COA (PDF)
-                    </button>
-                    <p class="text-muted small">Certificate of Analysis is included with every shipment</p>
-                </div>
-
-                <h3 class="h5 mb-3 mt-4">Quality Assurance</h3>
-                <p>Vital Healer Labs maintains strict quality control standards:</p>
-                <ul>
-                    <li>GMP-compliant manufacturing facilities</li>
-                    <li>Batch-specific testing for every production run</li>
-                    <li>Proper cold chain storage from manufacture to delivery</li>
-                    <li>Vacuum-sealed vials to maintain stability</li>
-                    <li>QR code on each vial for batch verification</li>
-                </ul>
-            </div>
         </div>
     </div>
 </section>
@@ -566,7 +491,7 @@ include(__DIR__ . '/../includes/header.php');
             <!-- You can loop through related products here -->
             <div class="col-md-3">
                 <div class="card h-100">
-                    <img src="/images/bpc-157-solo.jpg" class="card-img-top" alt="BPC-157 Solo">
+                    <img src="/images/bpc-157-solo_thumb.jpg" class="card-img-top" alt="BPC-157 Solo">
                     <div class="card-body">
                         <h3 class="h6">BPC-157 5mg</h3>
                         <p class="text-primary fw-bold">$59.50</p>
@@ -576,7 +501,7 @@ include(__DIR__ . '/../includes/header.php');
             </div>
             <div class="col-md-3">
                 <div class="card h-100">
-                    <img src="/images/tb-500-solo.jpg" class="card-img-top" alt="TB-500 Solo">
+                    <img src="/images/tb-500-solo_thumb.jpg" class="card-img-top" alt="TB-500 Solo">
                     <div class="card-body">
                         <h3 class="h6">TB-500 5mg</h3>
                         <p class="text-primary fw-bold">$75.00</p>
@@ -586,7 +511,7 @@ include(__DIR__ . '/../includes/header.php');
             </div>
             <div class="col-md-3">
                 <div class="card h-100">
-                    <img src="/images/ghk-cu.jpg" class="card-img-top" alt="GHK-Cu">
+                    <img src="/images/ghk-cu_thumb.jpg" class="card-img-top" alt="GHK-Cu">
                     <div class="card-body">
                         <h3 class="h6">GHK-Cu 50mg</h3>
                         <p class="text-primary fw-bold">$55.00
