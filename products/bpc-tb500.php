@@ -278,6 +278,12 @@ include(__DIR__ . '/../includes/header.php');
                         <div class="card h-100 border-primary">
                             <div class="card-body">
                                 <h3 class="h5 text-primary mb-3">BPC-157 (Body Protection Compound)</h3>
+                                <div class="text-center mb-3">
+                                    <img src="/images/bpc-157-chem.svg"
+                                         alt="BPC-157 Chemical Structure - 15 Amino Acid Sequence"
+                                         class="img-fluid"
+                                         style="max-height: 200px; width: auto;">
+                                </div>
                                 <ul class="mb-0">
                                     <li>Derived from gastric protective protein</li>
                                     <li>15 amino acid sequence</li>
@@ -292,6 +298,12 @@ include(__DIR__ . '/../includes/header.php');
                         <div class="card h-100 border-primary">
                             <div class="card-body">
                                 <h3 class="h5 text-primary mb-3">TB-500 (Thymosin Beta-4)</h3>
+                                <div class="text-center mb-3">
+                                    <img src="/images/tb500-chem.svg"
+                                         alt="TB-500 Chemical Structure - 43 Amino Acid Thymosin Beta-4 Fragment"
+                                         class="img-fluid"
+                                         style="max-height: 200px; width: auto;">
+                                </div>
                                 <ul class="mb-0">
                                     <li>Naturally occurring peptide in thymus</li>
                                     <li>43 amino acid sequence</li>
@@ -353,6 +365,54 @@ include(__DIR__ . '/../includes/header.php');
                             </tr>
                         </tbody>
                     </table>
+                </div>
+
+                <h4 class="h5 mb-3 mt-4">Chemical Structure Visualization</h4>
+                <p>Below are the detailed chemical structures of both peptides in this blend. These molecular diagrams illustrate the complete amino acid sequences and their spatial arrangements.</p>
+
+                <div class="row g-4 mb-4">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header bg-primary text-white">
+                                <strong>BPC-157 Structure</strong>
+                            </div>
+                            <div class="card-body text-center bg-light">
+                                <img src="/images/bpc-157-chem.svg"
+                                     alt="Complete BPC-157 Chemical Structure - Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val"
+                                     class="img-fluid"
+                                     style="max-width: 100%; height: auto;">
+                                <p class="small text-muted mt-3 mb-0">
+                                    <strong>Molecular Formula:</strong> C₆₂H₉₈N₁₆O₂₂<br>
+                                    <strong>Molecular Weight:</strong> 1419.53 g/mol
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header bg-info text-white">
+                                <strong>TB-500 Structure</strong>
+                            </div>
+                            <div class="card-body text-center bg-light">
+                                <img src="/images/tb500-chem.svg"
+                                     alt="Complete TB-500 Chemical Structure - Thymosin Beta-4 Fragment (43 Amino Acids)"
+                                     class="img-fluid"
+                                     style="max-width: 100%; height: auto;">
+                                <p class="small text-muted mt-3 mb-0">
+                                    <strong>Molecular Formula:</strong> C₂₁₂H₃₅₀N₅₆O₇₈S<br>
+                                    <strong>Molecular Weight:</strong> 4963.44 g/mol
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alert alert-info">
+                    <h5 class="h6 fw-bold">Structural Notes:</h5>
+                    <ul class="mb-0">
+                        <li><strong>BPC-157:</strong> A stable pentadecapeptide (15 amino acids) with a compact structure that contributes to its resistance to degradation in gastric environments.</li>
+                        <li><strong>TB-500:</strong> A larger 43-amino acid peptide with an acetylated N-terminus (Ac-Ser), which enhances its stability and biological activity. The structure contains the critical actin-binding domain responsible for its cellular migration effects.</li>
+                    </ul>
                 </div>
 
                 <h3 class="h4 mb-4 mt-5" id="overview-comparison">Comparative Analysis</h3>
@@ -1118,4 +1178,73 @@ include(__DIR__ . '/../includes/header.php');
                     <img src="/images/ghk-cu_thumb.jpg" class="card-img-top" alt="GHK-Cu">
                     <div class="card-body">
                         <h3 class="h6">GHK-Cu 50mg</h3>
-                        <p class="text-primary fw-bold">$55.00
+                        <p class="text-primary fw-bold">$55.00</p>
+                        <a href="/products/ghk-cu" class="btn btn-sm btn-outline-primary w-100">View Product</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <img src="/images/bpc-157-solo_thumb.jpg" class="card-img-top" alt="Sermorelin">
+                    <div class="card-body">
+                        <h3 class="h6">Sermorelin 5mg</h3>
+                        <p class="text-primary fw-bold">$65.00</p>
+                        <a href="/products/sermorelin" class="btn btn-sm btn-outline-primary w-100">View Product</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Structured Data for SEO -->
+<script type="application/ld+json">
+<?php echo json_encode($structured_data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES); ?>
+</script>
+
+<!-- Additional JavaScript for Product Interactions -->
+<script>
+// Quantity controls
+document.getElementById('qty-plus')?.addEventListener('click', function() {
+    const qtyInput = document.getElementById('quantity');
+    qtyInput.value = parseInt(qtyInput.value) + 1;
+    updatePrice();
+});
+
+document.getElementById('qty-minus')?.addEventListener('click', function() {
+    const qtyInput = document.getElementById('quantity');
+    if (parseInt(qtyInput.value) > 1) {
+        qtyInput.value = parseInt(qtyInput.value) - 1;
+        updatePrice();
+    }
+});
+
+// Update price calculation
+function updatePrice() {
+    const selectedVariant = document.querySelector('input[name="variant"]:checked');
+    const quantity = parseInt(document.getElementById('quantity').value);
+    const price = parseFloat(selectedVariant.dataset.price);
+    const total = price * quantity;
+    document.getElementById('total-price').textContent = total.toFixed(2);
+}
+
+// Update price when variant changes
+document.querySelectorAll('input[name="variant"]').forEach(radio => {
+    radio.addEventListener('change', updatePrice);
+});
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href !== '#' && document.querySelector(href)) {
+            e.preventDefault();
+            document.querySelector(href).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+</script>
+
+<?php include(__DIR__ . '/../includes/footer.php'); ?>
