@@ -15,7 +15,7 @@ Buy BPC-157 TB-500 Blend 10mg/20mg | 99% Purity | USA Made
 
 ### 2. **Meta Description**
 ```
-Premium BPC-157 and TB-500 peptide blend for research. Synergistic healing properties, third-party tested, 99% purity. Fast shipping, lab-tested COA included.
+Premium BPC-157 and TB-500 peptide blend for research. Synergistic healing properties, third-party tested, 99% purity. Fast shipping.
 ```
 - **Length**: 158 characters (optimal)
 - **Keywords**: Natural integration of key terms
@@ -141,7 +141,6 @@ Explains relationships between:
 
 **Authoritativeness**:
 - Third-party testing
-- COA documentation
 - Scientific citations
 - Professional presentation
 
@@ -210,7 +209,6 @@ Explains relationships between:
 - 4.9/5 star rating with 108 reviews
 - 99% purity badge
 - Third-party testing
-- COA included
 - Fast shipping badge
 - USA made indicator
 
