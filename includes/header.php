@@ -53,6 +53,28 @@
             font-size: 2.5rem;
             color: var(--bs-primary);
         }
+        /* Header fixes for solid background and proper layering */
+        header.sticky-top {
+            background-color: #ffffff !important;
+            z-index: 1030;
+            position: sticky;
+            top: 0;
+        }
+        header.sticky-top .navbar {
+            background-color: #ffffff !important;
+        }
+        header.sticky-top .navbar-collapse {
+            background-color: #ffffff !important;
+        }
+        /* Ensure mobile menu also has solid background */
+        @media (max-width: 991.98px) {
+            header.sticky-top .navbar-collapse {
+                background-color: #ffffff !important;
+                padding: 1rem;
+                margin-top: 0.5rem;
+                border-radius: 0.375rem;
+            }
+        }
     </style>
     <?php if (isset($additional_css)) echo $additional_css; ?>
 </head>
