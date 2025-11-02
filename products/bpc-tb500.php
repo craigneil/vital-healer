@@ -1155,7 +1155,7 @@ include(__DIR__ . '/../includes/header.php');
             <!-- You can loop through related products here -->
             <div class="col-md-3">
                 <div class="card h-100">
-                    <img src="/images/bpc-157-solo.jpg" class="card-img-top" alt="BPC-157 Solo">
+                    <img src="/images/bpc-157-solo.jpg" class="card-img-top" alt="BPC-157 Solo" loading="lazy" width="300" height="300">
                     <div class="card-body">
                         <h3 class="h6">BPC-157 5mg</h3>
                         <p class="text-primary fw-bold">$59.50</p>
@@ -1165,7 +1165,7 @@ include(__DIR__ . '/../includes/header.php');
             </div>
             <div class="col-md-3">
                 <div class="card h-100">
-                    <img src="/images/tb-500-solo.jpg" class="card-img-top" alt="TB-500 Solo">
+                    <img src="/images/tb-500-solo.jpg" class="card-img-top" alt="TB-500 Solo" loading="lazy" width="300" height="300">
                     <div class="card-body">
                         <h3 class="h6">TB-500 5mg</h3>
                         <p class="text-primary fw-bold">$75.00</p>
@@ -1175,7 +1175,7 @@ include(__DIR__ . '/../includes/header.php');
             </div>
             <div class="col-md-3">
                 <div class="card h-100">
-                    <img src="/images/ghk-cu.jpg" class="card-img-top" alt="GHK-Cu">
+                    <img src="/images/ghk-cu.jpg" class="card-img-top" alt="GHK-Cu" loading="lazy" width="300" height="300">
                     <div class="card-body">
                         <h3 class="h6">GHK-Cu 50mg</h3>
                         <p class="text-primary fw-bold">$55.00</p>
@@ -1185,7 +1185,7 @@ include(__DIR__ . '/../includes/header.php');
             </div>
             <div class="col-md-3">
                 <div class="card h-100">
-                    <img src="/images/bpc-157-solo.jpg" class="card-img-top" alt="Sermorelin">
+                    <img src="/images/bpc-157-solo.jpg" class="card-img-top" alt="Sermorelin" loading="lazy" width="300" height="300">
                     <div class="card-body">
                         <h3 class="h6">Sermorelin 5mg</h3>
                         <p class="text-primary fw-bold">$65.00</p>
