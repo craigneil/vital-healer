@@ -37,11 +37,11 @@ include 'includes/header.php';
             </div>
             <div class="col-lg-5 d-none d-lg-block">
                 <img 
-                    src="images/peptide_bottle_vital_healer.png" 
+                    src="images/peptide_bottle_vital_healer.webp" 
                     alt="Vital Healer Labs Research Peptide Vial" 
                     class="img-fluid mx-auto"
-                    width="500"
-                    height="500"
+                    width="400"
+                    height="486"
                     loading="eager"
                 >
             </div>
