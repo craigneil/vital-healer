@@ -1,7 +1,4 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
 // Load configuration
 require_once(__DIR__ . '/../config.php');
 
@@ -247,53 +244,109 @@ include(__DIR__ . '/../includes/header.php');
         <div class="tab-content bg-white rounded p-4 shadow-sm">
             <!-- Overview Tab -->
             <div class="tab-pane fade show active" id="overview" role="tabpanel">
-                <h2 class="h3 mb-4">What is BPC-157?</h2>
+                <h2 class="h3 mb-4">What is TB-500?</h2>
 
-                <p class="lead">BPC-157 (Thymosin Beta-4-157) is a synthetic polypeptide derived from a protective protein found in human thymus-derived juice. This 15-amino acid sequence has been extensively studied for its remarkable tissue protective and regenerative properties.</p>
+                <p class="lead">TB-500 is a synthetic peptide derived from Thymosin Beta-4, a naturally occurring protein found in virtually all human and animal cells. This 43-amino acid sequence has been extensively studied for its role in cell migration, tissue repair, and regeneration.</p>
 
-                <p>Originally isolated from thymus-derived secretions, BPC-157 represents a stable fragment of the larger body protection compound naturally present in the GI tract<sup><a href="#ref1" class="text-decoration-none">[1]</a></sup>. Its designation as "BPC-157" reflects its role as the 157th compound identified in the body protection series, with significant research demonstrating its cytoprotective effects across multiple tissue types<sup><a href="#ref2" class="text-decoration-none">[2]</a></sup>.</p>
+                <p>TB-500 represents the active region of Thymosin Beta-4, specifically engineered to enhance its biological activity and stability. Research demonstrates its potent effects on actin regulation—a fundamental protein involved in cell structure and movement—making it particularly valuable for musculoskeletal tissue repair research<sup><a href="#ref1" class="text-decoration-none">[1]</a></sup><sup><a href="#ref3" class="text-decoration-none">[3]</a></sup>.</p>
 
-                <h3 class="h4 mb-3 mt-4">Molecular & Chemical Information</h3>
+                <div class="row g-4 my-4">
+                    <div class="col-md-12">
+                        <div class="card h-100 border-primary">
+                            <div class="card-body">
+                                <h3 class="h5 text-primary mb-3">TB-500 (Thymosin Beta-4 Fragment)</h3>
+                                <div class="text-center mb-3">
+                                    <img src="/images/tb-500-chem.jpg"
+                                         alt="TB-500 Chemical Structure - 43 Amino Acid Thymosin Beta-4 Fragment"
+                                         class="img-fluid"
+                                         style="max-height: 200px; width: auto;">
+                                </div>
+                                <ul class="mb-0">
+                                    <li>Naturally occurring peptide fragment from thymus</li>
+                                    <li>43 amino acid sequence</li>
+                                    <li>Primary actin-binding protein<sup><a href="#ref4">[4]</a></sup></li>
+                                    <li>Facilitates cell migration to injury sites<sup><a href="#ref3">[3]</a></sup></li>
+                                    <li>Reduces inflammation and promotes angiogenesis</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="h4 mb-3 mt-4">Key Research Properties</h3>
+                <p>TB-500 demonstrates unique characteristics that make it valuable for tissue repair research<sup><a href="#ref4">[4]</a></sup>:</p>
+                <ol>
+                    <li><strong>Actin Regulation:</strong> TB-500's primary mechanism involves sequestering G-actin monomers, preventing premature polymerization and enabling controlled cell migration<sup><a href="#ref3">[3]</a></sup>.</li>
+                    <li><strong>Enhanced Cell Migration:</strong> Facilitates the directed movement of repair cells (fibroblasts, endothelial cells) to sites of injury, crucial for tissue regeneration.</li>
+                    <li><strong>Anti-Inflammatory Effects:</strong> Modulates inflammatory pathways, reducing excessive inflammation while promoting resolution<sup><a href="#ref7">[7]</a></sup>.</li>
+                    <li><strong>Angiogenic Properties:</strong> Supports new blood vessel formation through actin-dependent endothelial cell organization<sup><a href="#ref3">[3]</a></sup>.</li>
+                </ol>
+
+                <h3 class="h4 mb-4 mt-5">Molecular & Chemical Information</h3>
+
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Property</th>
+                                <th>TB-500</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Molecular Formula</strong></td>
+                                <td>C₂₁₂H₃₅₀N₅₆O₇₈S</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Molecular Weight</strong></td>
+                                <td>4963.44 g/mol</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sequence Length</strong></td>
+                                <td>43 amino acids</td>
+                            </tr>
+                            <tr>
+                                <td><strong>CAS Number</strong></td>
+                                <td>77591-33-4</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sequence</strong></td>
+                                <td>Ac-Ser-Asp-Lys-Pro-Asp-Met-Ala-Glu-Ile-Glu-Lys-Phe-Asp-Lys-Ser-Lys-Leu-Lys-Lys-Thr-Glu-Thr-Gln-Glu-Lys-Asn-Pro-Leu-Pro-Ser-Lys-Glu-Thr-Ile-Glu-Gln-Glu-Lys-Gln-Ala-Gly-Glu-Ser</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4 class="h5 mb-3 mt-4">Chemical Structure Visualization</h4>
+                <p>Below is the detailed chemical structure of TB-500. This molecular diagram illustrates the complete 43-amino acid sequence and its structural domains.</p>
 
                 <div class="row g-4 mb-4">
-                    <div class="col-lg-6">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h4 class="h6 fw-bold text-primary mb-3">Physical Properties</h4>
-                                <table class="table table-sm mb-0">
-                                    <tbody>
-                                        <tr>
-                                            <td><strong>Molecular Formula:</strong></td>
-                                            <td>C₂₁₂H₃₅₀N₅₆O₇₈S</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Molecular Weight:</strong></td>
-                                            <td>4963.44 g/mol</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Sequence Length:</strong></td>
-                                            <td>43 amino acids</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>CAS Number:</strong></td>
-                                            <td>77591-33-4</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header bg-info text-white">
+                                <strong>TB-500 Structure</strong>
+                            </div>
+                            <div class="card-body text-center bg-light">
+                                <img src="/images/tb-500-chem.jpg"
+                                     alt="Complete TB-500 Chemical Structure - Thymosin Beta-4 Fragment (43 Amino Acids)"
+                                     class="img-fluid"
+                                     style="max-width: 100%; height: auto;">
+                                <p class="small text-muted mt-3 mb-0">
+                                    <strong>Molecular Formula:</strong> C₂₁₂H₃₅₀N₅₆O₇₈S<br>
+                                    <strong>Molecular Weight:</strong> 4963.44 g/mol
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="card h-100 bg-light">
-                            <div class="card-body">
-                                <h4 class="h6 fw-bold text-primary mb-3">Amino Acid Sequence</h4>
-                                <p class="font-monospace small mb-3">Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val</p>
-                                <div class="alert alert-info small mb-0">
-                                    <strong>Stability Note:</strong> BPC-157 is resistant to thymus-derived acid degradation and remains stable at body temperature, making it highly bioavailable across multiple administration routes.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+
+                <div class="alert alert-info">
+                    <h5 class="h6 fw-bold">Structural Notes:</h5>
+                    <ul class="mb-0">
+                        <li><strong>TB-500:</strong> A 43-amino acid peptide with an acetylated N-terminus (Ac-Ser), which enhances its stability and biological activity<sup><a href="#ref4">[4]</a></sup>.</li>
+                        <li><strong>Actin-Binding Domain:</strong> The structure contains the critical actin-binding sequence responsible for sequestering G-actin and facilitating cell migration<sup><a href="#ref3">[3]</a></sup>.</li>
+                        <li><strong>Acetylation:</strong> The N-terminal acetylation protects the peptide from enzymatic degradation and contributes to its enhanced half-life in biological systems.</li>
+                    </ul>
                 </div>
 
                 <h3 class="h4 mb-3 mt-4">Key Characteristics</h3>

@@ -1,7 +1,4 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
 // Load configuration
 require_once(__DIR__ . '/../config.php');
 
@@ -312,8 +309,106 @@ include(__DIR__ . '/../includes/header.php');
 					</div>
 				</div>
 
+				<div class="row g-4 my-4">
+					<div class="col-md-4">
+						<div class="card h-100 border-primary">
+							<div class="card-body">
+								<h3 class="h5 text-primary mb-3">BPC-157 (Body Protection Compound)</h3>
+								<div class="text-center mb-3">
+									<img src="/images/bpc-157-chem.jpg"
+									     alt="BPC-157 Chemical Structure - 15 Amino Acid Sequence"
+									     class="img-fluid"
+									     style="max-height: 200px; width: auto;">
+								</div>
+								<ul class="mb-0">
+									<li>Derived from gastric protective protein</li>
+									<li>15 amino acid sequence</li>
+									<li>Promotes angiogenesis (blood vessel formation)<sup><a href="#ref1">[1]</a></sup></li>
+									<li>Regulates growth factor production</li>
+									<li>Enhances collagen formation</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card h-100 border-primary">
+							<div class="card-body">
+								<h3 class="h5 text-primary mb-3">TB-500 (Thymosin Beta-4)</h3>
+								<div class="text-center mb-3">
+									<img src="/images/tb-500-chem.jpg"
+									     alt="TB-500 Chemical Structure - 43 Amino Acid Thymosin Beta-4 Fragment"
+									     class="img-fluid"
+									     style="max-height: 200px; width: auto;">
+								</div>
+								<ul class="mb-0">
+									<li>Naturally occurring peptide in thymus</li>
+									<li>43 amino acid sequence</li>
+									<li>Actin-binding protein<sup><a href="#ref3">[3]</a></sup></li>
+									<li>Facilitates cell migration to injury sites</li>
+									<li>Reduces inflammation</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card h-100 border-primary">
+							<div class="card-body">
+								<h3 class="h5 text-primary mb-3">GHK-Cu (Copper Peptide)</h3>
+								<div class="text-center mb-3">
+									<img src="/images/ghk-cu-chem.jpg"
+									     alt="GHK-Cu Chemical Structure - Tripeptide Copper Complex"
+									     class="img-fluid"
+									     style="max-height: 200px; width: auto;">
+								</div>
+								<ul class="mb-0">
+									<li>Tripeptide-copper complex</li>
+									<li>3 amino acid sequence with Cu²⁺</li>
+									<li>Copper delivery and chelation</li>
+									<li>Upregulates collagen synthesis<sup><a href="#ref5">[5]</a></sup></li>
+									<li>Balances MMP/TIMP for ECM turnover</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mt-4">
+					<h3 class="h4 mb-3">Comparative Analysis</h3>
+					<div class="table-responsive">
+						<table class="table table-bordered">
+							<thead class="table-light">
+								<tr>
+									<th>Aspect</th>
+									<th>BPC-157</th>
+									<th>TB-500</th>
+									<th>GHK-Cu</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>Primary Mechanism</strong></td>
+									<td>Angiogenesis, growth factor modulation<sup><a href="#ref1">[1]</a></sup></td>
+									<td>Actin regulation, cell migration<sup><a href="#ref3">[3]</a></sup></td>
+									<td>Copper-mediated ECM/collagen signaling<sup><a href="#ref5">[5]</a></sup></td>
+								</tr>
+								<tr>
+									<td><strong>Key Use in Blend</strong></td>
+									<td>Perfusion & repair environment</td>
+									<td>Directed cellular trafficking</td>
+									<td>Matrix renewal & dermal quality</td>
+								</tr>
+								<tr>
+									<td><strong>Representative Pathways</strong></td>
+									<td>VEGF/NO</td>
+									<td>G-actin / filament dynamics</td>
+									<td>LOX, SOD, MMP/TIMP balance</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
 				<h3 class="h4 mb-3" id="overview-synergy">Why Combine Them?</h3>
-				<p>These agents act at distinct but complementary levels of the repair cascade: BPC-157 improves vascular supply and growth factor signaling, TB-500 organizes actin for directed cell migration, and GHK-Cu provides copper-mediated signaling that upregulates collagen-related genes and combats oxidative stress. Together, the blend targets angiogenesis, cell trafficking, and ECM remodeling—key axes in dermal and soft-tissue research.</p>
+				<p>These agents act at distinct but complementary levels of the repair cascade: BPC-157 improves vascular supply and growth factor signaling<sup><a href="#ref1" class="text-decoration-none">[1]</a></sup>, TB-500 organizes actin for directed cell migration<sup><a href="#ref3" class="text-decoration-none">[3]</a></sup>, and GHK-Cu provides copper-mediated signaling that upregulates collagen-related genes and combats oxidative stress<sup><a href="#ref5" class="text-decoration-none">[5]</a></sup><sup><a href="#ref6" class="text-decoration-none">[6]</a></sup>. Together, the blend targets angiogenesis, cell trafficking, and ECM remodeling—key axes in dermal and soft-tissue research.</p>
 
 				<h3 class="h4 mb-4 mt-5" id="overview-molecular">Molecular & Chemical Information</h3>
 				<div class="table-responsive">
@@ -328,10 +423,22 @@ include(__DIR__ . '/../includes/header.php');
 						</thead>
 						<tbody>
 							<tr>
+								<td><strong>Molecular Formula</strong></td>
+								<td>C₆₂H₉₈N₁₆O₂₂</td>
+								<td>C₂₁₂H₃₅₀N₅₆O₇₈S</td>
+								<td>C₁₄H₂₄N₆O₄ · Cu</td>
+							</tr>
+							<tr>
+								<td><strong>Molecular Weight</strong></td>
+								<td>1419.53 g/mol</td>
+								<td>4963.44 g/mol</td>
+								<td>~340.87 g/mol + Cu</td>
+							</tr>
+							<tr>
 								<td><strong>Sequence Length</strong></td>
 								<td>15 aa</td>
 								<td>43 aa</td>
-								<td>Tripeptide (with Cu²⁺)</td>
+								<td>Tripeptide (3 aa + Cu²⁺)</td>
 							</tr>
 							<tr>
 								<td><strong>CAS Number</strong></td>
@@ -347,6 +454,72 @@ include(__DIR__ . '/../includes/header.php');
 							</tr>
 						</tbody>
 					</table>
+				</div>
+
+				<h4 class="h5 mb-3 mt-4">Chemical Structure Visualization</h4>
+				<p>Below are the detailed chemical structures of all three peptides in this blend. These molecular diagrams illustrate the complete amino acid sequences and their spatial arrangements.</p>
+
+				<div class="row g-4 mb-4">
+					<div class="col-lg-4">
+						<div class="card">
+							<div class="card-header bg-primary text-white">
+								<strong>BPC-157 Structure</strong>
+							</div>
+							<div class="card-body text-center bg-light">
+								<img src="/images/bpc-157-chem.jpg"
+								     alt="Complete BPC-157 Chemical Structure"
+								     class="img-fluid"
+								     style="max-width: 100%; height: auto;">
+								<p class="small text-muted mt-3 mb-0">
+									<strong>15 aa</strong><br>
+									1419.53 g/mol
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="card">
+							<div class="card-header bg-info text-white">
+								<strong>TB-500 Structure</strong>
+							</div>
+							<div class="card-body text-center bg-light">
+								<img src="/images/tb-500-chem.jpg"
+								     alt="Complete TB-500 Chemical Structure"
+								     class="img-fluid"
+								     style="max-width: 100%; height: auto;">
+								<p class="small text-muted mt-3 mb-0">
+									<strong>43 aa</strong><br>
+									4963.44 g/mol
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="card">
+							<div class="card-header bg-success text-white">
+								<strong>GHK-Cu Structure</strong>
+							</div>
+							<div class="card-body text-center bg-light">
+								<img src="/images/ghk-cu-chem.jpg"
+								     alt="Complete GHK-Cu Chemical Structure"
+								     class="img-fluid"
+								     style="max-width: 100%; height: auto;">
+								<p class="small text-muted mt-3 mb-0">
+									<strong>Tripeptide · Cu²⁺</strong><br>
+									~340.87 g/mol + Cu
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="alert alert-info">
+					<h5 class="h6 fw-bold">Structural Notes:</h5>
+					<ul class="mb-0">
+						<li><strong>BPC-157:</strong> A stable pentadecapeptide (15 amino acids) with resistance to gastric degradation, enabling multiple administration routes<sup><a href="#ref1">[1]</a></sup>.</li>
+						<li><strong>TB-500:</strong> A 43-amino acid peptide with acetylated N-terminus (Ac-Ser) containing the critical actin-binding domain for cell migration<sup><a href="#ref3">[3]</a></sup>.</li>
+						<li><strong>GHK-Cu:</strong> A tripeptide with high-affinity copper coordination via histidine, facilitating copper delivery to lysyl oxidase and other ECM enzymes<sup><a href="#ref5">[5]</a></sup>.</li>
+					</ul>
 				</div>
 
 				<h3 class="h4 mb-4 mt-5" id="overview-applications">Quality Assurance & Testing</h3>
@@ -436,7 +609,7 @@ include(__DIR__ . '/../includes/header.php');
 							<div class="accordion-body">
 								<ul>
 									<li>Support of collagen signaling and ECM renewal (GHK-Cu)</li>
-									<li>Microvascular density and perfusion (BPC-157)</li>
+								<li>Microvascular density and perfusion (BPC-157)<sup><a href="#ref1" class="text-decoration-none">[1]</a></sup></li>
 									<li>Fibroblast migration and organization (TB-500)</li>
 								</ul>
 							</div>
@@ -451,7 +624,7 @@ include(__DIR__ . '/../includes/header.php');
 						<div id="research2" class="accordion-collapse collapse" data-bs-parent="#researchAccordion">
 							<div class="accordion-body">
 								<ul>
-									<li>Angiogenesis and re-epithelialization models</li>
+								<li>Angiogenesis and re-epithelialization models<sup><a href="#ref1" class="text-decoration-none">[1]</a></sup><sup><a href="#ref4" class="text-decoration-none">[4]</a></sup></li>
 									<li>Collagen deposition and alignment studies</li>
 									<li>Inflammatory marker modulation</li>
 								</ul>
@@ -467,7 +640,7 @@ include(__DIR__ . '/../includes/header.php');
 						<div id="research3" class="accordion-collapse collapse" data-bs-parent="#researchAccordion">
 							<div class="accordion-body">
 								<ul>
-									<li>GHK-Cu pathways in follicular environment and dermal papilla</li>
+								<li>GHK-Cu pathways in follicular environment and dermal papilla<sup><a href="#ref5" class="text-decoration-none">[5]</a></sup></li>
 									<li>Vascular support and tissue perfusion (BPC-157)</li>
 									<li>Cell migration in follicular niche (TB-500)</li>
 								</ul>
@@ -643,21 +816,27 @@ include(__DIR__ . '/../includes/header.php');
 				<ol class="references-list">
 					<li id="ref1" class="mb-3">
 						<strong>Chang CH, Tsai WC, Lin MS, Hsu YH, Pang JHS.</strong> The promoting effect of pentadecapeptide BPC 157 on tendon healing involves tendon outgrowth, cell survival, and cell migration. <em>J Appl Physiol.</em> 2011;110(3):774-780.
+						[<a href="https://journals.physiology.org/doi/full/10.1152/japplphysiol.00945.2010" target="_blank" rel="nofollow noopener">Source</a>]
 					</li>
 					<li id="ref2" class="mb-3">
 						<strong>Sikiric P, Seiwerth S, Rucman R, et al.</strong> Stable gastric pentadecapeptide BPC 157: Novel therapy in gastrointestinal tract. <em>Curr Pharm Des.</em> 2011;17(16):1612-1632.
+						[<a href="https://www.ncbi.nlm.nih.gov/pubmed/21548866" target="_blank" rel="nofollow noopener">PubMed</a>]
 					</li>
 					<li id="ref3" class="mb-3">
 						<strong>Philp D, Huff T, Gho YS, et al.</strong> The actin binding site on thymosin beta-4 promotes angiogenesis. <em>FASEB J.</em> 2003;17(14):2103-2105.
+						[<a href="https://doi.org/10.1096/fj.03-0206fje" target="_blank" rel="nofollow noopener">DOI</a>]
 					</li>
 					<li id="ref4" class="mb-3">
 						<strong>Goldstein AL, Hannappel E, Kleinman HK.</strong> Thymosin β4: actin-sequestering protein moonlights to repair injured tissues. <em>Trends Mol Med.</em> 2005;11(9):421-429.
+						[<a href="https://doi.org/10.1016/j.molmed.2005.07.004" target="_blank" rel="nofollow noopener">DOI</a>]
 					</li>
 					<li id="ref5" class="mb-3">
 						<strong>Pickart L, Margolina A.</strong> GHK-Cu in skin remodeling and anti-aging. <em>Clin Cosmet Investig Dermatol.</em> 2018;11:469–483.
+						[<a href="https://www.dovepress.com/ghk-cu-in-skin-remodeling-and-anti-aging-peer-reviewed-fulltext-article-CCID" target="_blank" rel="nofollow noopener">Source</a>]
 					</li>
 					<li id="ref6" class="mb-3">
 						<strong>Maquart FX, et al.</strong> Stimulation of collagen synthesis by the tripeptide-copper complex GHK-Cu in fibroblast cultures. <em>FEBS Lett.</em> 1988;238(2):343–346.
+						[<a href="https://pubmed.ncbi.nlm.nih.gov/2965491/" target="_blank" rel="nofollow noopener">PubMed</a>]
 					</li>
 				</ol>
 				<div class="alert alert-warning mt-4">

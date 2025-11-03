@@ -1,7 +1,4 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
 // Load configuration
 require_once(__DIR__ . '/../config.php');
 
@@ -253,47 +250,103 @@ include(__DIR__ . '/../includes/header.php');
 
                 <p>Originally isolated from gastric secretions, BPC-157 represents a stable fragment of the larger body protection compound naturally present in the GI tract<sup><a href="#ref1" class="text-decoration-none">[1]</a></sup>. Its designation as "BPC-157" reflects its role as the 157th compound identified in the body protection series, with significant research demonstrating its cytoprotective effects across multiple tissue types<sup><a href="#ref2" class="text-decoration-none">[2]</a></sup>.</p>
 
-                <h3 class="h4 mb-3 mt-4">Molecular & Chemical Information</h3>
+                <div class="row g-4 my-4">
+                    <div class="col-md-12">
+                        <div class="card h-100 border-primary">
+                            <div class="card-body">
+                                <h3 class="h5 text-primary mb-3">BPC-157 (Body Protection Compound)</h3>
+                                <div class="text-center mb-3">
+                                    <img src="/images/bpc-157-chem.jpg"
+                                         alt="BPC-157 Chemical Structure - 15 Amino Acid Sequence"
+                                         class="img-fluid"
+                                         style="max-height: 200px; width: auto;">
+                                </div>
+                                <ul class="mb-0">
+                                    <li>Derived from gastric protective protein</li>
+                                    <li>15 amino acid pentadecapeptide sequence</li>
+                                    <li>Promotes angiogenesis (blood vessel formation)<sup><a href="#ref3">[3]</a></sup></li>
+                                    <li>Regulates growth factor production<sup><a href="#ref7">[7]</a></sup></li>
+                                    <li>Enhances fibroblast migration and collagen formation<sup><a href="#ref1">[1]</a></sup></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="h4 mb-3 mt-4">Key Research Properties</h3>
+                <p>BPC-157 demonstrates unique characteristics that distinguish it from other regenerative peptides<sup><a href="#ref5">[5]</a></sup>:</p>
+                <ol>
+                    <li><strong>Exceptional Stability:</strong> Resistant to gastric acid degradation and stable at body temperature, making it highly bioavailable across multiple administration routes.</li>
+                    <li><strong>Broad Tissue Specificity:</strong> Unlike many peptides with narrow tissue specificity, BPC-157 demonstrates beneficial effects across musculoskeletal, gastrointestinal, vascular, and neural tissues<sup><a href="#ref5">[5]</a></sup>.</li>
+                    <li><strong>Multi-Pathway Action:</strong> Simultaneously modulates angiogenesis, growth factors, inflammation, and cytoprotection for comprehensive tissue repair<sup><a href="#ref4">[4]</a></sup>.</li>
+                    <li><strong>Favorable Safety Profile:</strong> Extensive preclinical research shows minimal adverse effects with wide therapeutic window<sup><a href="#ref5">[5]</a></sup>.</li>
+                </ol>
+
+                <h3 class="h4 mb-4 mt-5">Molecular & Chemical Information</h3>
+
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Property</th>
+                                <th>BPC-157</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Molecular Formula</strong></td>
+                                <td>C₆₂H₉₈N₁₆O₂₂</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Molecular Weight</strong></td>
+                                <td>1419.53 g/mol</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sequence Length</strong></td>
+                                <td>15 amino acids</td>
+                            </tr>
+                            <tr>
+                                <td><strong>CAS Number</strong></td>
+                                <td>137525-51-0</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sequence</strong></td>
+                                <td>Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4 class="h5 mb-3 mt-4">Chemical Structure Visualization</h4>
+                <p>Below is the detailed chemical structure of BPC-157. This molecular diagram illustrates the complete amino acid sequence and spatial arrangement.</p>
 
                 <div class="row g-4 mb-4">
-                    <div class="col-lg-6">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h4 class="h6 fw-bold text-primary mb-3">Physical Properties</h4>
-                                <table class="table table-sm mb-0">
-                                    <tbody>
-                                        <tr>
-                                            <td><strong>Molecular Formula:</strong></td>
-                                            <td>C₆₂H₉₈N₁₆O₂₂</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Molecular Weight:</strong></td>
-                                            <td>1419.53 g/mol</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Sequence Length:</strong></td>
-                                            <td>15 amino acids</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>CAS Number:</strong></td>
-                                            <td>137525-51-0</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header bg-primary text-white">
+                                <strong>BPC-157 Structure</strong>
+                            </div>
+                            <div class="card-body text-center bg-light">
+                                <img src="/images/bpc-157-chem.jpg"
+                                     alt="Complete BPC-157 Chemical Structure - Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val"
+                                     class="img-fluid"
+                                     style="max-width: 100%; height: auto;">
+                                <p class="small text-muted mt-3 mb-0">
+                                    <strong>Molecular Formula:</strong> C₆₂H₉₈N₁₆O₂₂<br>
+                                    <strong>Molecular Weight:</strong> 1419.53 g/mol
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="card h-100 bg-light">
-                            <div class="card-body">
-                                <h4 class="h6 fw-bold text-primary mb-3">Amino Acid Sequence</h4>
-                                <p class="font-monospace small mb-3">Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val</p>
-                                <div class="alert alert-info small mb-0">
-                                    <strong>Stability Note:</strong> BPC-157 is resistant to gastric acid degradation and remains stable at body temperature, making it highly bioavailable across multiple administration routes.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+
+                <div class="alert alert-info">
+                    <h5 class="h6 fw-bold">Structural Notes:</h5>
+                    <ul class="mb-0">
+                        <li><strong>BPC-157:</strong> A stable pentadecapeptide (15 amino acids) with a compact structure that contributes to its resistance to degradation in gastric environments<sup><a href="#ref1">[1]</a></sup>.</li>
+                        <li><strong>Bioavailability:</strong> The peptide's stability allows for effective delivery across multiple administration routes (subcutaneous, oral, intraperitoneal) in research models.</li>
+                        <li><strong>Activity:</strong> The specific sequence and structure enable interaction with growth factor receptors and modulation of angiogenic pathways<sup><a href="#ref3">[3]</a></sup>.</li>
+                    </ul>
                 </div>
 
                 <h3 class="h4 mb-3 mt-4">Key Characteristics</h3>
