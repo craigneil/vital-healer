@@ -16,8 +16,8 @@ $product = [
         '10mg' => ['price' => 95.00, 'stock' => true]
     ],
     'default_variant' => '5mg',
-    'rating' => 4.8,
-    'review_count' => 142,
+    'rating' => 4.9,
+    'review_count' => 654,
     'image' => '/images/bpc-157-solo.jpg',
     'purity' => '99%',
     'manufacturer' => 'USA',
