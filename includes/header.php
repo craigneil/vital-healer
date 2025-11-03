@@ -32,10 +32,10 @@
     <?php endif; ?>
 
     <!-- Preload Critical Resources -->
-    <link rel="preload" href="css/bootstrap.purged.css" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" as="style" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- Bootstrap CSS - Preloaded above, linked here -->
-	<link href="css/bootstrap.purged.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	
     <?php if (basename($_SERVER['PHP_SELF']) == 'index.php'): ?>
     <!-- Google Material Symbols - Only on homepage (optional display to prevent CLS) -->
