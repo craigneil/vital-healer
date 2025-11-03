@@ -29,6 +29,9 @@ $page_title = 'Buy BPC-157 TB-500 Blend 10mg/20mg | 99% Purity | USA Made';
 $page_description = 'Premium BPC-157 and TB-500 peptide blend for research. Synergistic healing properties, third-party tested, 99% purity. Fast shipping.';
 $page_keywords = 'BPC-157 TB-500 blend, buy BPC-157 TB-500, peptide blend, tissue repair peptides, recovery peptides, research peptides';
 
+// Preload LCP image for better performance
+$additional_css = '<link rel="preload" href="' . $product['image'] . '" as="image" fetchpriority="high">';
+
 // Structured Data for Rich Snippets
 $structured_data = [
     '@context' => 'https://schema.org',
@@ -79,11 +82,12 @@ include(__DIR__ . '/../includes/header.php');
             <!-- Product Images -->
             <div class="col-lg-5 mb-4">
                 <div class="sticky-top" style="top: 100px;">
-                    <img src="<?php echo $product['image']; ?>" 
-                         alt="BPC-157 TB-500 Peptide Blend Vial - <?php echo $product['purity']; ?> Purity" 
+                    <img src="<?php echo $product['image']; ?>"
+                         alt="BPC-157 TB-500 Peptide Blend Vial - <?php echo $product['purity']; ?> Purity"
                          class="img-fluid rounded shadow-sm mb-3"
                          width="500"
-                         height="500">
+                         height="500"
+                         fetchpriority="high">
                     
                     <!-- Trust Badges -->
                     <div class="d-flex justify-content-around text-center mt-4">
