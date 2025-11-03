@@ -1237,8 +1237,39 @@ document.querySelectorAll('input[name="variant"]').forEach(radio => {
     radio.addEventListener('change', updatePrice);
 });
 
-// Smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+// Handle reference citation links - activate References tab then scroll
+document.querySelectorAll('a[href^="#ref"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const refId = this.getAttribute('href');
+        const targetElement = document.querySelector(refId);
+
+        if (targetElement) {
+            // Activate the References & Citations tab
+            const referencesTabButton = document.getElementById('references-tab');
+            const referencesTab = new bootstrap.Tab(referencesTabButton);
+
+            // Show the tab first
+            referencesTab.show();
+
+            // Scroll to citation after tab transition completes
+            setTimeout(() => {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+                // Highlight the citation briefly
+                targetElement.style.backgroundColor = '#fff3cd';
+                setTimeout(() => {
+                    targetElement.style.backgroundColor = '';
+                }, 2000);
+            }, 150);
+        }
+    });
+});
+
+// Smooth scroll for other anchor links
+document.querySelectorAll('a[href^="#"]:not([href^="#ref"])').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         const href = this.getAttribute('href');
         if (href !== '#' && document.querySelector(href)) {
