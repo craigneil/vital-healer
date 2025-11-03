@@ -53,7 +53,7 @@ include 'includes/header.php';
 <section class="bg-light py-5">
     <div class="container-md">
         <h2 class="fs-2 fw-bolder text-dark mb-4 border-bottom border-4 border-primary d-inline-block pb-2">About Vital Healer Labs</h2>
-        <div class="row g-4 g-lg-5 fs-5 text-secondary">
+        <div class="row g-4 g-lg-5 fs-5 text-dark">
             <div class="col-lg-6">
                 <p>
                     At Vital Healer Labs, we believe scientific research drives tomorrow's breakthroughs. That's why we provide researchers with high-quality, rigorously tested peptides to support studies in recovery, performance, longevity, and beyond.
@@ -61,7 +61,7 @@ include 'includes/header.php';
             </div>
             <div class="col-lg-6">
                 <p>
-                    Every product undergoes independent lab testing to ensure purity and consistency. Our dedication to scientific integrity means we hold ourselves to the highest standards of quality assurance. We provide results you can trust, confirming exactly what's in every vial. 
+                    Every product undergoes independent lab testing to ensure purity and consistency. Our dedication to scientific integrity means we hold ourselves to the highest standards of quality assurance. We provide results you can trust, confirming exactly what's in every vial.
                 </p>
             </div>
         </div>
@@ -75,7 +75,7 @@ include 'includes/header.php';
             <!-- Featured Compounds -->
             <div class="col-lg-6">
                 <h2 class="fs-3 fw-bolder text-dark mb-4 border-bottom pb-2">Featured Research Compounds</h2>
-                <p class="fs-5 text-secondary mb-4">Browse our most requested peptides:</p>
+                <p class="fs-5 text-dark mb-4">Browse our most requested peptides:</p>
                 <div class="d-flex flex-column gap-3">
                     <?php foreach ($featured_compounds as $compound): ?>
                     <div class="p-3 border rounded-3 shadow-sm">
@@ -91,7 +91,7 @@ include 'includes/header.php';
             <!-- Educational Guides -->
             <div class="col-lg-6">
                 <h2 class="fs-3 fw-bolder text-dark mb-4 border-bottom pb-2">Educational Guides</h2>
-                <p class="fs-5 text-secondary mb-4">Knowledge is power. Explore our expert-written research guides:</p>
+                <p class="fs-5 text-dark mb-4">Knowledge is power. Explore our expert-written research guides:</p>
                 <div class="d-flex flex-column gap-3">
                     <?php foreach ($educational_guides as $guide): ?>
                     <div class="p-3 bg-light rounded-3 border">
@@ -121,7 +121,7 @@ include 'includes/header.php';
                             <span class="material-symbols-outlined"><?php echo $feature['icon']; ?></span>
                         </div>
                         <h3 class="fw-bold fs-5 mb-2 text-dark"><?php echo $feature['title']; ?></h3>
-                        <p class="text-secondary mb-0"><?php echo $feature['description']; ?></p>
+                        <p class="text-dark mb-0"><?php echo $feature['description']; ?></p>
                     </div>
                 </div>
             </div>
